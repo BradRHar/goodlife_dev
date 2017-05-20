@@ -1,0 +1,10 @@
+// used to make sidebar show up for gallery bike before when I hadn't made the proper sidebar
+
+		<?php if ( ! empty ( $GLOBALS['post'] )
+					&& is_single()
+					&& in_category( 'gallery-bike', $GLOBALS['post'] ) 
+				 ) {
+					get_sidebar('bike-gallery');
+				 } else { 
+					get_sidebar('sidebar1');
+		} ?>

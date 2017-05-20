@@ -2301,7 +2301,7 @@ select {
 .button {
   display: inline-block;
   vertical-align: middle;
-  margin: 0 0 1rem 0;
+  margin: 1rem 0;
   padding: 0.85em 1em;
   -webkit-appearance: none;
   border: 1px solid transparent;
@@ -4191,7 +4191,7 @@ a.thumbnail {
     clear: both; }
   .top-bar,
   .top-bar ul {
-    background-color: #e6e6e6; }
+    background-color: transparent; }
   .top-bar input {
     max-width: 200px;
     margin-right: 1rem; }
@@ -4429,7 +4429,7 @@ POSTS & CONTENT STYLES
 .post-password-form input[type="submit"] {
   display: inline-block;
   vertical-align: middle;
-  margin: 0 0 1rem 0;
+  margin: 1rem 0;
   padding: 0.85em 1em;
   -webkit-appearance: none;
   border: 1px solid transparent;
@@ -4696,15 +4696,16 @@ Stylesheet: Brad's Custom Stylesheet
 
 *************************************************/
 /*********************
-Footer
+Global
 *********************/
-#sidebar-social {
-  text-align: center; }
+.marg {
+  margin: 2rem 0; }
+  @media print, screen and (min-width: 40em) {
+    .marg {
+      margin: 4rem 0; } }
 
-span[class^="fi"] {
-  margin: 0 2rem;
-  font-size: 4rem;
-  color: #0a0a0a; }
+.pad {
+  padding: 4rem; }
 
 /*********************
 Homepage STYLES
@@ -4755,3 +4756,23 @@ a.sb-link {
 
 a.sb-link:hover {
   border: 2px solid #555; }
+
+/*********************
+Footer
+*********************/
+#sidebar-social {
+  text-align: center; }
+
+span[class^="fi-social"] {
+  margin: 0 1rem;
+  font-size: 3rem;
+  color: #0a0a0a; }
+
+.hours, .contact {
+  text-align: center; }
+
+.copyright {
+  text-align: center; }
+  @media print, screen and (min-width: 40em) {
+    .copyright {
+      text-align: right; } }

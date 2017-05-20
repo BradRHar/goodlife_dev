@@ -7,18 +7,18 @@ Stylesheet: Brad's Custom Stylesheet
 @import 'colors';
 
 /*********************
-Footer
+Global
 *********************/
 
-#sidebar-social{
-	text-align: center;
+.marg{
+	margin: 2rem 0;
+	@include breakpoint(medium){
+		margin: 4rem 0;
+	}
 }
 
-
-span[class^="fi"]{
-	margin: 0 2rem;
-	font-size: 4rem;
-	color: $black;
+.pad{
+	padding: 4rem;
 }
 
 
@@ -83,4 +83,31 @@ a.sb-link{
 
 a.sb-link:hover{
 	border: 2px solid #555;
+}
+
+
+/*********************
+Footer
+*********************/
+
+#sidebar-social{
+	text-align: center;
+}
+
+// ffoundation icon font s for social media icons
+span[class^="fi-social"]{
+	margin: 0 1rem;
+	font-size: 3rem;
+	color: $black;
+}
+
+.hours, .contact{
+	text-align: center;
+}
+
+.copyright{
+	text-align: center;
+	@include breakpoint(medium){
+		text-align: right;
+	}
 }

@@ -21,16 +21,6 @@ function joints_register_sidebars() {
 		'after_title' => '</h4>',
 	));
 
-	register_sidebar(array(
-		'id' => 'social',
-		'name' => __('Social Media', 'jointswp'),
-		'description' => __('Social Media sidebar on the Home page.', 'jointswp'),
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget' => '</div>',
-		'before_title' => '<h4 class="widgettitle">',
-		'after_title' => '</h4>',
-	));
-
     register_sidebar( array(
     	'id' => 'bike-gallery',
         'name' => __( 'Bike Gallery', 'theme-slug' ),
@@ -40,6 +30,46 @@ function joints_register_sidebars() {
 		'before_title' => '<h4 class="widgettitle">',
 		'after_title' => '</h4>',
     ) );
+
+    register_sidebar( array(
+    	'id' => 'footer1',
+        'name' => __( 'Footer 1', 'theme-slug' ),
+        'description' => __( 'Widgets in this area will be shown in the footer, on the left.', 'theme-slug' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h4 class="widgettitle text-center">',
+		'after_title' => '</h4>',
+    ) );
+
+    register_sidebar( array(
+    	'id' => 'footer2',
+        'name' => __( 'Footer 2', 'theme-slug' ),
+        'description' => __( 'Widgets in this area will be shown in the footer, left of center.', 'theme-slug' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h4 class="widgettitle text-center">',
+		'after_title' => '</h4>',
+    ) );
+
+    register_sidebar( array(
+    	'id' => 'footer3',
+        'name' => __( 'Footer 3', 'theme-slug' ),
+        'description' => __( 'Widgets in this area will be shown in the footer, right of center.', 'theme-slug' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h4 class="widgettitle text-center">',
+		'after_title' => '</h4>',
+    ) );
+    
+	register_sidebar(array(
+		'id' => 'social',
+		'name' => __('Social Media', 'jointswp'),
+		'description' => __('Social Media sidebar on the Home page.', 'jointswp'),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h4 class="widgettitle text-center">',
+		'after_title' => '</h4>',
+	));
 
 	/*
 	to add more sidebars or widgetized areas, just copy

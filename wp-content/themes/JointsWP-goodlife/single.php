@@ -15,19 +15,12 @@
 
 		</main> <!-- end #main -->
 
-
-<?php if ( ! empty ( $GLOBALS['post'] )
-&& is_single()
-&& in_category( 'gallery-bike', $GLOBALS['post'] ) 
-) {
-get_sidebar('bike-gallery');
-} else { 
-get_sidebar('sidebar1');
-} 
-?>
-
+		<?php if ( is_single()&& in_category( 'gallery-bike' ) ) {
+					get_sidebar('bike-gallery');
+				 } else { 
+					get_sidebar('sidebar1');
+		} ?>
 
 	</div> <!-- end #inner-content -->
 </div> <!-- end #content -->
-
 <?php get_footer(); ?>

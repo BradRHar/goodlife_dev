@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 	<div id="content">
 		<div id="inner-content" class="row">
-		    <main id="main" class="large-8 medium-8 columns" role="main">
+		    <main id="main" class="small-12 columns" role="main">
 			    
 		    	<header>
 		    		<h1 class="page-title">Bike Gallery</h1>
