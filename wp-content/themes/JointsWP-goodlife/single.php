@@ -1,10 +1,7 @@
-<?php get_header(); ?>
-			
+<?php get_header(); ?>		
 <div id="content">
-
 	<div id="inner-content" class="row">
-
-		<main id="main" class="large-8 medium-8 columns" role="main">
+		<main id="main" class="small-12 medium-8 columns" role="main">
 		
 		    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 		
@@ -18,10 +15,19 @@
 
 		</main> <!-- end #main -->
 
-		<?php get_sidebar(); ?>
+
+<?php if ( ! empty ( $GLOBALS['post'] )
+&& is_single()
+&& in_category( 'gallery-bike', $GLOBALS['post'] ) 
+) {
+get_sidebar('bike-gallery');
+} else { 
+get_sidebar('sidebar1');
+} 
+?>
+
 
 	</div> <!-- end #inner-content -->
-
 </div> <!-- end #content -->
 
 <?php get_footer(); ?>

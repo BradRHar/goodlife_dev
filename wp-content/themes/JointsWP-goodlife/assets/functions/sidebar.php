@@ -21,6 +21,26 @@ function joints_register_sidebars() {
 		'after_title' => '</h4>',
 	));
 
+	register_sidebar(array(
+		'id' => 'social',
+		'name' => __('Social Media', 'jointswp'),
+		'description' => __('Social Media sidebar on the Home page.', 'jointswp'),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h4 class="widgettitle">',
+		'after_title' => '</h4>',
+	));
+
+    register_sidebar( array(
+    	'id' => 'bike-gallery',
+        'name' => __( 'Bike Gallery', 'theme-slug' ),
+        'description' => __( 'Widgets in this area will be shown at the top of the sidebar on a Gallery Bike Post Page.', 'theme-slug' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h4 class="widgettitle">',
+		'after_title' => '</h4>',
+    ) );
+
 	/*
 	to add more sidebars or widgetized areas, just copy
 	and edit the above sidebar code. In order to call

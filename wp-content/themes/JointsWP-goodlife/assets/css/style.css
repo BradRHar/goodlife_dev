@@ -937,7 +937,7 @@ body {
   margin: 0;
   padding: 0;
   background: #fefefe;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: normal;
   line-height: 1.5;
   color: #0a0a0a;
@@ -987,7 +987,7 @@ button {
   display: none !important; }
 
 .row {
-  max-width: 75rem;
+  max-width: 69rem;
   margin-right: auto;
   margin-left: auto; }
   .row::before, .row::after {
@@ -1802,7 +1802,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   color: inherit;
@@ -1878,7 +1878,7 @@ a {
 
 hr {
   clear: both;
-  max-width: 75rem;
+  max-width: 69rem;
   height: 0;
   margin: 1.25rem auto;
   border-top: 0;
@@ -2099,10 +2099,6 @@ input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
   color: #cacaca; }
 
-input::-moz-placeholder,
-textarea::-moz-placeholder {
-  color: #cacaca; }
-
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
   color: #cacaca; }
@@ -2283,8 +2279,6 @@ select {
   border-color: #cc4b37;
   background-color: #f9ecea; }
   .is-invalid-input:not(:focus)::-webkit-input-placeholder {
-    color: #cc4b37; }
-  .is-invalid-input:not(:focus)::-moz-placeholder {
     color: #cc4b37; }
   .is-invalid-input:not(:focus):-ms-input-placeholder {
     color: #cc4b37; }
@@ -3789,7 +3783,7 @@ html.is-reveal-open body {
   @media print, screen and (min-width: 40em) {
     .reveal {
       width: 600px;
-      max-width: 75rem; } }
+      max-width: 69rem; } }
   @media print, screen and (min-width: 40em) {
     .reveal .reveal {
       right: auto;
@@ -3800,15 +3794,15 @@ html.is-reveal-open body {
   @media print, screen and (min-width: 40em) {
     .reveal.tiny {
       width: 30%;
-      max-width: 75rem; } }
+      max-width: 69rem; } }
   @media print, screen and (min-width: 40em) {
     .reveal.small {
       width: 50%;
-      max-width: 75rem; } }
+      max-width: 69rem; } }
   @media print, screen and (min-width: 40em) {
     .reveal.large {
       width: 90%;
-      max-width: 75rem; } }
+      max-width: 69rem; } }
   .reveal.full {
     top: 0;
     left: 0;
@@ -4695,3 +4689,69 @@ to display none.
   .respond-form,
   nav {
     display: none; } }
+
+/************************************************
+
+Stylesheet: Brad's Custom Stylesheet
+
+*************************************************/
+/*********************
+Footer
+*********************/
+#sidebar-social {
+  text-align: center; }
+
+span[class^="fi"] {
+  margin: 0 2rem;
+  font-size: 4rem;
+  color: #0a0a0a; }
+
+/*********************
+Homepage STYLES
+*********************/
+.news-image {
+  padding: 0; }
+
+/*********************
+ Sidebar styles
+*********************/
+#searchform {
+  margin-bottom: 2em; }
+
+.screen-reader-text {
+  width: 100%;
+  display: block; }
+
+#s {
+  width: 90%;
+  margin-bottom: .5em; }
+
+.sb-sidebar ul {
+  padding-left: 0;
+  padding: 1%; }
+
+.sb-sidebar li {
+  list-style: none;
+  margin-bottom: 1em;
+  border-bottom: 1px solid #333; }
+
+.sb-sidebar a {
+  text-decoration: none; }
+
+.sb-sidebar a:hover {
+  color: #555; }
+
+.sb-sidebar li a img {
+  margin: 1em auto;
+  display: block;
+  border-radius: 50%; }
+
+a.sb-link {
+  text-align: center;
+  border: 2px solid black;
+  margin: 1rem;
+  display: block;
+  padding: .5em; }
+
+a.sb-link:hover {
+  border: 2px solid #555; }

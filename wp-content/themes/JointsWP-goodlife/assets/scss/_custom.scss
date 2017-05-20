@@ -1,0 +1,86 @@
+/************************************************
+
+Stylesheet: Brad's Custom Stylesheet
+
+*************************************************/
+
+@import 'colors';
+
+/*********************
+Footer
+*********************/
+
+#sidebar-social{
+	text-align: center;
+}
+
+
+span[class^="fi"]{
+	margin: 0 2rem;
+	font-size: 4rem;
+	color: $black;
+}
+
+
+/*********************
+Homepage STYLES
+*********************/
+
+.news-image{
+	padding: 0;
+}
+
+/*********************
+ Sidebar styles
+*********************/
+
+#searchform{
+	margin-bottom: 2em;
+}
+
+.screen-reader-text{
+	width: 100%;
+	display: block;
+}
+
+#s{
+	width: 90%;
+	margin-bottom: .5em;
+}
+
+.sb-sidebar ul{
+	padding-left: 0;
+	padding: 1%;
+}
+
+.sb-sidebar li{
+	list-style: none;
+	margin-bottom: 1em;
+	border-bottom: 1px solid #333;
+}
+
+.sb-sidebar a{
+	text-decoration: none;
+}
+
+.sb-sidebar a:hover{
+	color: #555;
+}
+
+.sb-sidebar li a img{
+	margin: 1em auto;
+	display: block;
+	border-radius: 50%;
+}
+
+a.sb-link{
+	text-align: center;
+	border: 2px solid black;
+	margin: 1rem;
+	display: block;
+	padding: .5em;
+}
+
+a.sb-link:hover{
+	border: 2px solid #555;
+}
