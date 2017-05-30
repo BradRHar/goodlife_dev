@@ -1,4 +1,4 @@
-<aside id="sidebar-salebike" class="sidebar medium-4 columns sb-sidebar" role="complementary">
+<aside id="sidebar-salebike" class="sidebar medium-3 columns sb-sidebar" role="complementary">
 
 	<?php if ( is_active_sidebar( 'bike-gallery' ) ) : ?>
 

@@ -1,11 +1,27 @@
 /******************************************************************
 Theme Name: JointsWP - Sass
 Theme URI: http://www.jointswp.com
-Description: 
-Author: Your Name Here
-Author URI: http://www.yoururlhere.com
+Description: Custom Build for Goodlife Bike Shop
+Author: Brad Hartshorn
+Author URI: https://bradhartshorn.com/
 Version: 4.0
 License: GNU General Public License & MIT
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: Sass
+Site Backup Repository: https://github.com/BradRHar/goodlife_dev
+
+CSS Instructions:
+
+This theme's CSS file is located in assets/css/style.css. It is 
+complied using SASS and Gulp. Hooking is up to run on your local
+development environment is pretty straight forward. 
+
+1) Clone the github repository onto your computer. I use Sourcetree.
+2) Go to the Theme URI to find instructions on running Gulp to
+	compile SASS files.
+3) Edit in a local environment and upload the css files via FTP
+
+If you have any questions, don't hesitate to contact Brad via 
+his website https://bradhartshorn.com/
+
 ******************************************************************/

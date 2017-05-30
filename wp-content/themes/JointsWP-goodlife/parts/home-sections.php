@@ -1,60 +1,35 @@
 <!-- Bike Gallery Section -->
 <section class="row marg">
-	
-		<?php 
-		$args = array(
-			'category_name'=>'gallery-bike',
-			'posts_per_page'=>3,
-			);
-		$query = new WP_Query( $args ); ?>	
-			
-		<?php if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post(); ?>
 
-			<div class="small-12 medium-4 column">
-				<a href="<?php the_permalink(); ?>">
-					<div class="card">
-						<div class="card-section">
-							<?php the_post_thumbnail( 'medium' ); ?>
-						</div>
-						<div class="card-section text-center">
-							<?php the_title('<h4>', '</h4>'); ?>
-						</div>
-					</div>
-				</a>
-			</div>
+	<?php 
+	$args = array(
+		'category_name'=>'gallery-bike',
+		'posts_per_page'=>3,
+		);
+	$query = new WP_Query( $args ); ?>	
+		
+	<?php if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post(); ?>
 
-		<?php endwhile; endif; wp_reset_postdata(); ?>
-
-		<div class="small-12 column text-center">
-			<a href="<?php echo bloginfo('url'); ?>/category/gallery-bike/">
-				<button class="button">View More ></button>
-			</a>
-		</div>
-</section>
-
-<!-- Partners Section -->
-<section class="row marg">	
-		<div class="small-12 column text-center">
-			<h2>Our Friends and Supporters</h2>
-		</div>
-
-		<?php 
-		$args = array(
-			'category_name'=>'partner',
-			);
-		$query = new WP_Query( $args ); ?>	
-			
-		<?php if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post(); ?>
-
-			<div class="small-6 medium-3 column">
-				<a href="<?php the_permalink(); ?>">
-					<div>
+		<div class="small-12 medium-4 column">
+			<a href="<?php the_permalink(); ?>">
+				<div class="card">
+					<div class="card-section">
 						<?php the_post_thumbnail( 'medium' ); ?>
 					</div>
-				</a>
-			</div>
+					<div class="card-section text-center">
+						<?php the_title('<h4>', '</h4>'); ?>
+					</div>
+				</div>
+			</a>
+		</div>
 
-		<?php endwhile; endif; wp_reset_postdata(); ?>
+	<?php endwhile; endif; wp_reset_postdata(); ?>
+
+	<div class="small-12 column text-center">
+		<a href="<?php echo bloginfo('url'); ?>/category/gallery-bike/">
+			<button class="button">View More ></button>
+		</a>
+	</div>
 </section>
 
 <!-- News Section -->
@@ -88,5 +63,36 @@
 	</div>
 
 		<?php $counter++ ; endwhile; endif; wp_reset_postdata(); ?>
+
+	<div class="small-12 column text-center">
+		<a href="<?php echo bloginfo('url'); ?>/category/news/">
+			<button class="button">View Older ></button>
+		</a>
+	</div>
 	
+</section>
+<br>
+<!-- Partners Section -->
+<section class="row marg">	
+	<div class="small-12 column text-center">
+		<h2>Our Friends and Supporters</h2>
+	</div>
+
+	<?php 
+	$args = array(
+		'category_name'=>'partner',
+		);
+	$query = new WP_Query( $args ); ?>	
+		
+	<?php if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post(); ?>
+
+		<div class="small-6 medium-3 column">
+			<a href="<?php the_permalink(); ?>">
+				<div>
+					<?php the_post_thumbnail( 'medium' ); ?>
+				</div>
+			</a>
+		</div>
+
+	<?php endwhile; endif; wp_reset_postdata(); ?>
 </section>

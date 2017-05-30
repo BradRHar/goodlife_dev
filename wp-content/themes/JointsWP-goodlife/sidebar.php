@@ -1,4 +1,4 @@
-<aside id="sidebar1" class="sidebar medium-4 columns" role="complementary">
+<aside id="sidebar1" class="sidebar medium-3 columns" role="complementary">
 
 	<?php if ( is_active_sidebar( 'sidebar1' ) ) : ?>
 

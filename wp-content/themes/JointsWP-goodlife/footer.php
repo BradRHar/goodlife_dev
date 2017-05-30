@@ -2,17 +2,14 @@
 					<div id="inner-footer">
 						
 						<div class="row">
-							<div class="sidebar small-12 medium-3 columns marg">
+							<div class="sidebar small-12 medium-4 columns marg">
 								<?php get_sidebar('footer1'); ?>
 							</div>
-							<div class="sidebar small-12 medium-3 columns marg">
+							<div class="sidebar small-12 medium-4 columns marg">
 								<?php get_sidebar('footer2'); ?>
 							</div>
-							<div class="sidebar small-12 medium-3 columns marg">
+							<div class="sidebar small-12 medium-4 columns marg">
 								<?php get_sidebar('footer3'); ?>
-							</div>
-							<div class="sidebar small-12 medium-3 columns marg">
-								<?php get_sidebar('social'); ?>
 							</div>
 	    				</div>
 

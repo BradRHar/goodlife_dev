@@ -4,13 +4,13 @@
 		    <main id="main" class="small-12 medium-9 columns" role="main">
 			    
 		    	<header>
-		    		<h1 class="page-title">Bike Gallery</h1>
+		    		<h1 class="page-title">News</h1>
 		    	</header>
 		
 		    	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 			 
 					<!-- To see additional archive styles, visit the /parts directory -->
-					<?php get_template_part( 'parts/loop', 'archive' ); ?>
+					<?php get_template_part( 'parts/loop', 'archive-news' ); ?>
 				    
 				<?php endwhile; ?>	
 
@@ -23,6 +23,9 @@
 				<?php endif; ?>
 		
 			</main> <!-- end #main -->
+
+			<?php get_sidebar( 'sidebar1' ); ?>
+
 	    </div> <!-- end #inner-content -->    
 	</div> <!-- end #content -->
 <?php get_footer(); ?>
