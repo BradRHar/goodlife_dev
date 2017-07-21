@@ -23,6 +23,58 @@ Global
 
 
 /*********************
+Navigation
+*********************/
+
+.btn-mobile-nav{
+	text-align: center;
+	padding: 1rem;
+}
+
+// Mobile toggel icon
+.list-container{
+	vertical-align: bottom;
+}
+
+.fi-list{
+	color: map-get($foundation-palette, primary);
+	font-size: 1.5rem;	
+}
+
+
+//aligning elements
+.top-bar{
+	@include breakpoint(medium){
+		padding-bottom: 2rem;
+	}
+}
+
+.top-bar-left{
+	padding-top: 4rem;
+	@include breakpoint(medium){
+		padding-top: inherit;
+		margin-top: -2.5rem;
+	}
+}
+
+.top-bar-right{
+	@include breakpoint(medium){
+		margin-top: -1.75rem;
+	}
+}
+
+
+.sitelogo{
+	display: inline-block;
+}
+
+.sitelogo svg{
+	height: 10rem;
+	margin-bottom: -5rem;
+}
+
+
+/*********************
 Homepage STYLES
 *********************/
 

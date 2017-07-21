@@ -4710,6 +4710,42 @@ Global
   padding: 4rem; }
 
 /*********************
+Navigation
+*********************/
+.btn-mobile-nav {
+  text-align: center;
+  padding: 1rem; }
+
+.list-container {
+  vertical-align: bottom; }
+
+.fi-list {
+  color: #1779ba;
+  font-size: 1.5rem; }
+
+@media print, screen and (min-width: 40em) {
+  .top-bar {
+    padding-bottom: 2rem; } }
+
+.top-bar-left {
+  padding-top: 4rem; }
+  @media print, screen and (min-width: 40em) {
+    .top-bar-left {
+      padding-top: inherit;
+      margin-top: -2.5rem; } }
+
+@media print, screen and (min-width: 40em) {
+  .top-bar-right {
+    margin-top: -1.75rem; } }
+
+.sitelogo {
+  display: inline-block; }
+
+.sitelogo svg {
+  height: 10rem;
+  margin-bottom: -5rem; }
+
+/*********************
 Homepage STYLES
 *********************/
 .news-image {
