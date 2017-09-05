@@ -9,4 +9,10 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /goodlife_dev/index.php [L]
 </IfModule>
 
+<IfModule mod_php5.c>
+php_value post_max_size           64M
+php_value upload_max_filesize     64M
+php_value memory_limit            500M
+</IfModule>
+
 # END WordPress

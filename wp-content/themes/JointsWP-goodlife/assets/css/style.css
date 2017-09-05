@@ -4732,7 +4732,7 @@ Navigation
   @media print, screen and (min-width: 40em) {
     .top-bar-left {
       padding-top: inherit;
-      margin-top: -2.5rem; } }
+      margin-top: -3rem; } }
 
 @media print, screen and (min-width: 40em) {
   .top-bar-right {
@@ -4749,7 +4749,9 @@ Navigation
 Homepage STYLES
 *********************/
 .news-image {
-  padding: 0; }
+  padding: 0;
+  overflow: hidden;
+  max-height: 30rem; }
 
 /*********************
  Sidebar styles
@@ -4795,12 +4797,12 @@ a.sb-link {
 a.sb-link:hover {
   border: 2px solid #555; }
 
-/*********************
-Footer
-*********************/
 #sidebar-social {
   text-align: center; }
 
+/*********************
+Footer
+*********************/
 span[class^="fi-social"] {
   margin: 0 1rem;
   font-size: 3rem;

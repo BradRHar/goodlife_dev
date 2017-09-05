@@ -49,11 +49,12 @@ Navigation
 	}
 }
 
+// social menu
 .top-bar-left{
 	padding-top: 4rem;
 	@include breakpoint(medium){
 		padding-top: inherit;
-		margin-top: -2.5rem;
+		margin-top: -3rem;
 	}
 }
 
@@ -80,6 +81,8 @@ Homepage STYLES
 
 .news-image{
 	padding: 0;
+	overflow: hidden;
+	max-height: 30rem;
 }
 
 /*********************
@@ -137,14 +140,14 @@ a.sb-link:hover{
 	border: 2px solid #555;
 }
 
+#sidebar-social{
+	text-align: center;
+}
+
 
 /*********************
 Footer
 *********************/
-
-#sidebar-social{
-	text-align: center;
-}
 
 // ffoundation icon font s for social media icons
 span[class^="fi-social"]{

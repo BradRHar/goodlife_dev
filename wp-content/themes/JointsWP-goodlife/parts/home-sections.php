@@ -25,9 +25,9 @@
 
 	<?php endwhile; endif; wp_reset_postdata(); ?>
 
-	<div class="small-12 column text-center">
+	<div class="small-12 column text-center marg">
 		<a href="<?php echo bloginfo('url'); ?>/category/gallery-bike/">
-			<button class="button">View More ></button>
+			<button class="button">View More Bikes ></button>
 		</a>
 	</div>
 </section>
@@ -64,9 +64,9 @@
 
 		<?php $counter++ ; endwhile; endif; wp_reset_postdata(); ?>
 
-	<div class="small-12 column text-center">
+	<div class="small-12 column text-center marg">
 		<a href="<?php echo bloginfo('url'); ?>/category/news/">
-			<button class="button">View Older ></button>
+			<button class="button">View Older Posts ></button>
 		</a>
 	</div>
 	
