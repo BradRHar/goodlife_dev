@@ -4727,6 +4727,9 @@ Navigation
   .top-bar {
     padding-bottom: 2rem; } }
 
+.donateButton {
+  border: 2px solid #1779ba; }
+
 .top-bar-left {
   padding-top: 4rem; }
   @media print, screen and (min-width: 40em) {
@@ -4753,6 +4756,10 @@ Homepage STYLES
   overflow: hidden;
   max-height: 30rem; }
 
+h2.friends {
+  text-align: center;
+  margin-bottom: 2rem; }
+
 /*********************
  Sidebar styles
 *********************/
@@ -4774,7 +4781,7 @@ Homepage STYLES
 .sb-sidebar li {
   list-style: none;
   margin-bottom: 1em;
-  border-bottom: 1px solid #333; }
+  border-bottom: 1px solid #e6e6e6; }
 
 .sb-sidebar a {
   text-decoration: none; }
@@ -4787,22 +4794,15 @@ Homepage STYLES
   display: block;
   border-radius: 50%; }
 
-a.sb-link {
-  text-align: center;
-  border: 2px solid black;
-  margin: 1rem;
-  display: block;
-  padding: .5em; }
-
-a.sb-link:hover {
-  border: 2px solid #555; }
-
 #sidebar-social {
   text-align: center; }
 
 /*********************
 Footer
 *********************/
+footer.footer {
+  border-top: 1px solid #e6e6e6; }
+
 span[class^="fi-social"] {
   margin: 0 1rem;
   font-size: 3rem;

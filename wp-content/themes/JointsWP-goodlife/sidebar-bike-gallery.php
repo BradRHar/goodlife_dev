@@ -1,15 +1,8 @@
 <aside id="sidebar-salebike" class="sidebar medium-3 columns sb-sidebar" role="complementary">
 
-	<?php if ( is_active_sidebar( 'bike-gallery' ) ) : ?>
+	<?php if ( is_active_sidebar( 'salebike' ) ) : ?>
 
-		<?php dynamic_sidebar( 'bike-gallery' ); ?>
-
-	<?php else : ?>
-
-		<!-- This content shows up if there are no widgets defined in the backend. -->			
-		<div class="alert help">
-			<p><?php _e( 'Please activate some Widgets.', 'jointswp' );  ?></p>
-		</div>
+		<?php dynamic_sidebar( 'salebike' ); ?>
 
 	<?php endif; ?>
 

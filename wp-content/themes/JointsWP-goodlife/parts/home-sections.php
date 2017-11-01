@@ -23,13 +23,16 @@
 			</a>
 		</div>
 
-	<?php endwhile; endif; wp_reset_postdata(); ?>
+	<?php endwhile; ?>
 
 	<div class="small-12 column text-center marg">
 		<a href="<?php echo bloginfo('url'); ?>/category/gallery-bike/">
 			<button class="button">View More Bikes ></button>
 		</a>
 	</div>
+
+	<?php endif; wp_reset_postdata(); ?>
+
 </section>
 
 <!-- News Section -->
@@ -62,21 +65,23 @@
 
 	</div>
 
-		<?php $counter++ ; endwhile; endif; wp_reset_postdata(); ?>
+		<?php $counter++ ; endwhile; ?>
 
 	<div class="small-12 column text-center marg">
 		<a href="<?php echo bloginfo('url'); ?>/category/news/">
 			<button class="button">View Older Posts ></button>
 		</a>
 	</div>
-	
+
+	<?php endif; wp_reset_postdata(); ?>
+
 </section>
-<br>
+
 <!-- Partners Section -->
-<section class="row marg">	
-	<div class="small-12 column text-center">
-		<h2>Our Friends and Supporters</h2>
-	</div>
+<section class="column row marg text-center">
+	<h2 class="friends">Our Friends and Supporters</h2>
+
+	<div class="row small-up-2 medium-up-4">
 
 	<?php 
 	$args = array(
@@ -86,13 +91,11 @@
 		
 	<?php if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post(); ?>
 
-		<div class="small-6 medium-3 column">
-			<a href="<?php the_permalink(); ?>">
-				<div>
-					<?php the_post_thumbnail( 'medium' ); ?>
-				</div>
-			</a>
+		<div class="column column-block">
+			<?php the_content(); ?>
 		</div>
 
 	<?php endwhile; endif; wp_reset_postdata(); ?>
+
+	</div><!-- end block grid -->
 </section>

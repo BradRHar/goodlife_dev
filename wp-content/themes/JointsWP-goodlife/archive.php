@@ -1,9 +1,7 @@
 <?php get_header(); ?>
 			
 	<div id="content">
-	
 		<div id="inner-content" class="row">
-		
 		    <main id="main" class="small-12 medium-9 columns" role="main">
 			    
 		    	<header>

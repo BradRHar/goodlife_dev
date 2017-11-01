@@ -22,7 +22,7 @@ function joints_register_sidebars() {
 	));
 
     register_sidebar( array(
-    	'id' => 'bike-gallery',
+    	'id' => 'salebike',
         'name' => __( 'Bike Gallery', 'theme-slug' ),
         'description' => __( 'Widgets in this area will be shown at the top of the sidebar on a Gallery Bike Post Page.', 'theme-slug' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',

@@ -23,6 +23,9 @@ require_once(get_template_directory().'/assets/functions/page-navi.php');
 // Adds support for multiple languages
 require_once(get_template_directory().'/assets/translation/translation.php'); 
 
+// Brad's fixes
+require_once(get_template_directory().'/assets/functions/fixes.php');
+
 // Add web font
 require_once(get_template_directory().'/assets/functions/webfont.php'); 
 

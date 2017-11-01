@@ -49,6 +49,11 @@ Navigation
 	}
 }
 
+// Donate styles
+.donateButton{
+	border: 2px solid map-get($foundation-palette, primary);
+}
+
 // social menu
 .top-bar-left{
 	padding-top: 4rem;
@@ -85,6 +90,11 @@ Homepage STYLES
 	max-height: 30rem;
 }
 
+h2.friends{
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
 /*********************
  Sidebar styles
 *********************/
@@ -111,7 +121,7 @@ Homepage STYLES
 .sb-sidebar li{
 	list-style: none;
 	margin-bottom: 1em;
-	border-bottom: 1px solid #333;
+	border-bottom: 1px solid $light-gray;
 }
 
 .sb-sidebar a{
@@ -128,18 +138,6 @@ Homepage STYLES
 	border-radius: 50%;
 }
 
-a.sb-link{
-	text-align: center;
-	border: 2px solid black;
-	margin: 1rem;
-	display: block;
-	padding: .5em;
-}
-
-a.sb-link:hover{
-	border: 2px solid #555;
-}
-
 #sidebar-social{
 	text-align: center;
 }
@@ -149,7 +147,11 @@ a.sb-link:hover{
 Footer
 *********************/
 
-// ffoundation icon font s for social media icons
+footer.footer{
+	border-top:1px solid $light-gray;
+}
+
+// foundation icon fonts for social media icons
 span[class^="fi-social"]{
 	margin: 0 1rem;
 	font-size: 3rem;
