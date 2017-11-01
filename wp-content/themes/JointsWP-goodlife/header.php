@@ -36,7 +36,7 @@
 	
 	<!-- Uncomment this line if using the Off-Canvas Menu --> 
 		
-	<body <?php body_class(); ?>>
+	<body id="top" <?php body_class(); ?>>
 
 		<div class="off-canvas-wrapper">
 							

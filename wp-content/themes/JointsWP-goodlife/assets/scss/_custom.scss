@@ -41,6 +41,9 @@ Navigation
 	font-size: 1.5rem;	
 }
 
+li.is-accordion-submenu-item a{
+	padding: .7rem 1rem .7rem 2rem;
+}
 
 //aligning elements
 .top-bar{
@@ -51,7 +54,9 @@ Navigation
 
 // Donate styles
 .donateButton{
+	@include breakpoint(large){
 	border: 2px solid map-get($foundation-palette, primary);
+	}
 }
 
 // social menu
@@ -61,6 +66,13 @@ Navigation
 		padding-top: inherit;
 		margin-top: -3rem;
 	}
+}
+
+// foundation icon fonts for social media icons
+span[class^="fi-social"]{
+	margin: 0 1rem;
+	font-size: 3rem;
+	color: $black;
 }
 
 .top-bar-right{
@@ -151,11 +163,16 @@ footer.footer{
 	border-top:1px solid $light-gray;
 }
 
-// foundation icon fonts for social media icons
-span[class^="fi-social"]{
-	margin: 0 1rem;
-	font-size: 3rem;
-	color: $black;
+#menu-footer li{
+	text-align: center;
+	display: block;
+	@include breakpoint(medium){
+		text-align: left;
+	}
+}
+
+#menu-footer li a{
+	margin-bottom: 1rem;
 }
 
 .hours, .contact{
@@ -163,6 +180,7 @@ span[class^="fi-social"]{
 }
 
 .copyright{
+	padding-top: .5rem;
 	text-align: center;
 	@include breakpoint(medium){
 		text-align: right;

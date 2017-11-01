@@ -69,7 +69,7 @@
 
 	<div class="small-12 column text-center marg">
 		<a href="<?php echo bloginfo('url'); ?>/category/news/">
-			<button class="button">View Older Posts ></button>
+			<button class="button">View More News ></button>
 		</a>
 	</div>
 
