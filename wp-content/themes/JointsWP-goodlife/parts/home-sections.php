@@ -59,7 +59,6 @@
 			<p class="byline"><?php the_time('F j, Y'); ?></p> 
 			<h3><?php the_title(); ?></h3>
 			<p><?php the_excerpt(); ?></p>
-			<a href="<?php the_permalink(); ?>"> <button class="button">Read More ></button> </a>
 
 		</div>
 
