@@ -6,6 +6,8 @@
     </header> <!-- end article header -->
 					
     <section class="entry-content" itemprop="articleBody">
+		<?php if ( is_single() && in_category( 'gallery-bike' ) ) {
+			the_post_thumbnail( 'medium' ); } ?>
 		<?php the_content(); ?>
 	</section> <!-- end article section -->
 						

@@ -15,7 +15,7 @@
 
 		</main> <!-- end #main -->
 
-		<?php if ( is_single()&& in_category( 'gallery-bike' ) ) {
+		<?php if ( is_single() && in_category( 'gallery-bike' ) ) {
 					get_sidebar('bike-gallery');
 				 } else { 
 					get_sidebar('sidebar1');

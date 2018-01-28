@@ -6,7 +6,7 @@
 			
 	<section class="small-12 medium-6 column entry-content" itemprop="articleBody">
 		<header class="article-header">
-			<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+			<h3><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
 			<?php get_template_part( 'parts/content', 'byline' ); ?>
 		</header> <!-- end article header -->
 		<?php the_excerpt(); ?>

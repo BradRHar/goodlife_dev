@@ -14,7 +14,7 @@
 			<a href="<?php the_permalink(); ?>">
 				<div class="card">
 					<div class="card-section">
-						<?php the_post_thumbnail( 'medium' ); ?>
+						<?php the_post_thumbnail( 'thumbnail' ); ?>
 					</div>
 					<div class="card-section text-center">
 						<?php the_title('<h4>', '</h4>'); ?>

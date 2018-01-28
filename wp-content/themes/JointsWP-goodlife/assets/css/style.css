@@ -4643,6 +4643,12 @@ h2.friends {
   margin-bottom: 2rem; }
 
 /*********************
+Page STYLES
+*********************/
+.entry-content img {
+  margin-bottom: 1rem; }
+
+/*********************
  Sidebar styles
 *********************/
 #searchform {
@@ -4663,7 +4669,7 @@ h2.friends {
 .sb-sidebar li {
   list-style: none;
   margin-bottom: 1em;
-  border-bottom: 1px solid #e6e6e6; }
+  border-top: 1px solid #e6e6e6; }
 
 .sb-sidebar a {
   text-decoration: none; }
@@ -4673,8 +4679,7 @@ h2.friends {
 
 .sb-sidebar li a img {
   margin: 1em auto;
-  display: block;
-  border-radius: 50%; }
+  display: block; }
 
 #sidebar-social {
   text-align: center; }

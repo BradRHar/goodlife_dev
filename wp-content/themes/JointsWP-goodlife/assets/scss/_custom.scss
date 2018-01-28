@@ -108,6 +108,15 @@ h2.friends{
 }
 
 /*********************
+Page STYLES
+*********************/
+
+.entry-content img {
+    margin-bottom: 1rem;
+}
+
+
+/*********************
  Sidebar styles
 *********************/
 
@@ -133,7 +142,7 @@ h2.friends{
 .sb-sidebar li{
 	list-style: none;
 	margin-bottom: 1em;
-	border-bottom: 1px solid $light-gray;
+	border-top: 1px solid $light-gray;
 }
 
 .sb-sidebar a{
@@ -147,7 +156,6 @@ h2.friends{
 .sb-sidebar li a img{
 	margin: 1em auto;
 	display: block;
-	border-radius: 50%;
 }
 
 #sidebar-social{

@@ -11,7 +11,7 @@
 		global $excludes;
 		$args2 = array(
 				'category_name' => 'gallery-bike',
-				'posts_per_page' => '10',
+				'posts_per_page' => '6',
 				'orderby' => 'rand',
 				'post__not_in' => $excludes,
 		);
