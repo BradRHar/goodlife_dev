@@ -4664,12 +4664,14 @@ Page STYLES
 
 .sb-sidebar ul {
   padding-left: 0;
-  padding: 1%; }
+  padding: 1%;
+  margin-left: 0; }
 
 .sb-sidebar li {
   list-style: none;
   margin-bottom: 1em;
-  border-top: 1px solid #e6e6e6; }
+  border-top: 1px solid #e6e6e6;
+  padding-top: 1rem; }
 
 .sb-sidebar a {
   text-decoration: none; }
