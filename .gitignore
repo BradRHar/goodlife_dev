@@ -1,6 +1,7 @@
 /wp-configLIVE.php
 /wp-config.php
 /.htaccess
+/.htaccess_local
 /local-config.php
 /wp-content/uploads/
 /backup/
